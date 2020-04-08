@@ -1,0 +1,19 @@
+\chapter{Resumen}
+
+\section{¿Qué es el Reconocimiento Facial?}
+
+El Reconocimiento Facial es un método para verificar la identidad de un individuo utilizando rasgos faciales. Tecnologías que implementan este método son capaces de identificar individuos en fotos, videos o incluso en tiempo real.
+
+\section{¿Cómo funciona?}
+
+Los algoritmos de reconocimiento facial primeramente identifican ciertos rasgos principales sobre el rostro de las personas, por ejemplo, la distancia entre los ojos, los pómulos, la nariz, etc. A partir de estos datos, se genera un modelo matemático del rostro de esta persona, el cual puede utilizarse como una forma de identificación biométrica.
+
+Los beneficios de guardar este modelo matemático en lugar del rostro original son el ahorro en memoria y agilidad de procesamiento, dado que si se guardara la imagen completa la base de datos generada crecería a proporsiones poco prácticas en sentido económico y computacional.
+
+Una vez generado el mapa facial del individuo en cuestión, este se compara contra una base de datos de otros mapas faciales. La identificación resultaría positiva en cuanto ambos mapas faciales coincidan dentro de una tolerancia razonable.
+
+\section{Criterios}
+
+A la hora de evaluar un sistema de reconocimiento facial, uno debe tener en cuenta dos números: la proporción de ``falsos positivos'' y la proporción de ``falsos negativos''. Un falso positivo ocurre cuando el sistema devuelve una coincidencia cuando ambos rostros no son coincidentes, y un falso negativo ocurre cuando el sistema determina que no hay una coincidencia cuando en realidad sí coinciden.
+
+Estos problemas pueden ser resultados de diferentes factores que pueden afectar a la generación de los modelos de los rostros: iluminación en la foto, orientación del rostro, resolución de la imagen, objetos cubriendo el rostro, etc.
