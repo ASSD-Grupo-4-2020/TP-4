@@ -1,0 +1,9 @@
+informe/*.aux
+informe/*.dvi
+informe/*.log
+informe/*.gz
+informe/*.toc
+informe/*.bbl
+informe/*.blg
+informe/*.txt
+.DS_Store
