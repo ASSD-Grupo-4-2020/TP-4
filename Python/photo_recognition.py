@@ -15,7 +15,7 @@ with open('labels.pickle', 'rb') as f:
 
 
 
-original_image = cv2.imread('images/Multiples/multiple_3.jpeg')
+original_image = cv2.imread('images/Multiples/multiple_2.jpg')
 grayscale_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
 
 detected_faces = face_cascade.detectMultiScale(grayscale_image, scaleFactor=1.5, minNeighbors=5)

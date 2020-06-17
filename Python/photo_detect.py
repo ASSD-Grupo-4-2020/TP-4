@@ -2,7 +2,7 @@ import cv2
 
 
 def face_detection(decision):
-    original_image = cv2.imread('images/Multiples/multiple_1.jpg')
+    original_image = cv2.imread('images/Agus/a.jpeg')
     grayscale_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
 
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
@@ -30,7 +30,7 @@ def face_detection(decision):
                 original_image,
                 (column, row),
                 (column + width, row + height),
-                (0, 255, 0),
+                (0, 0, 0),
                 2
             )
 

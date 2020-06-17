@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 import pickle
 from Python.Fps import FPS, WebcamVideoStream
+import math
 
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
@@ -41,14 +42,14 @@ while True:
 
 
             font = cv2.FONT_HERSHEY_SIMPLEX
-            name = labels[id_] + '  ' + str(conf)
+            name = labels[id_] + '  ' + str(math.trunc(conf))
             color = (255, 155, 0)
             stroke = 3
             cv2.putText(frame, name, (x, y), font, 1, color, stroke, cv2.LINE_AA)
 
         elif conf >= 70:
             font = cv2.FONT_HERSHEY_SIMPLEX
-            name = 'No Idea' + '  ' + str(conf)
+            name = 'No Idea' + '  ' + str(math.trunc(conf))
             color = (255, 155, 0)
             stroke = 3
             cv2.putText(frame, name, (x, y), font, 1, color, stroke, cv2.LINE_AA)
