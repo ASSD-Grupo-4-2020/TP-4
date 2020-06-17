@@ -1,3 +1,9 @@
+'''
+
+Este Archivo reconoce rostros en relacion a la base de datos utilizada
+
+'''
+
 import cv2
 import pickle
 import math
@@ -14,8 +20,8 @@ with open('labels.pickle', 'rb') as f:
     labels = {v: k for k,v in og_labels.items()}
 
 
-
-original_image = cv2.imread('images/Multiples/multiple_2.jpg')
+#Aca se coloca el path hacia la imagen que desee identificar
+original_image = cv2.imread('Test_images/test1.jpeg')
 grayscale_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
 
 detected_faces = face_cascade.detectMultiScale(grayscale_image, scaleFactor=1.5, minNeighbors=5)
